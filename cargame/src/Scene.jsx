@@ -5,6 +5,7 @@ import{
 
  } from "@react-three/drei"
   import { Suspense } from "react";
+  import { Car } from "./Car"; 
   import { Ground } from "./Ground";
   import { Track } from "./Track";
   
@@ -21,6 +22,7 @@ import{
 
             <Track />
             <Ground/>
+            <Car/>
         </Suspense>
     );
   }
