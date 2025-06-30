@@ -5,8 +5,9 @@ import{
 
  } from "@react-three/drei"
   import { Suspense } from "react";
+  import { Ground } from "./Ground";
   import { Track } from "./Track";
-
+  
   export function Scene(){
     return(
         <Suspense fallback={null}>
@@ -19,6 +20,7 @@ import{
               <OrbitControls target={[-2.64, -0.71, 0.03]}   />
 
             <Track />
+            <Ground/>
         </Suspense>
     );
   }
